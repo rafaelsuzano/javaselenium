@@ -1,2 +1,2 @@
-# javaselenium
+# Java Selenium
 JavaSelenium
