@@ -1,4 +1,4 @@
-# Java Selenium
+# Projeto básico de Automação de Teste Página WEB
 
     Projeto Maven
       * Selenium
