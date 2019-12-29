@@ -7,25 +7,19 @@ import java.util.Properties;
 
 import javax.imageio.ImageIO;
 
-import org.openqa.selenium.TakesScreenshot;
+import org.apache.commons.io.FileUtils;
+import org.junit.BeforeClass;
+import org.junit.Test;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.DesiredCapabilities;
+
+import com.relevantcodes.extentreports.LogStatus;
 
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
-
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import java.io.IOException;
-
-import org.apache.commons.io.FileUtils;
- 
-import org.openqa.selenium.OutputType;
 
 public class estudo {
 	private static WebDriver driver;
@@ -93,7 +87,10 @@ public class estudo {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		
-		driver.get("http://www.uol.com/");
+		driver.get("https://www.google.com");
+		if(driver.getTitle().equals("Google"))
+
+	
 //		printScreen();
 		printScreen2();
 		Thread.sleep(5000); // Let the user actually see something!
